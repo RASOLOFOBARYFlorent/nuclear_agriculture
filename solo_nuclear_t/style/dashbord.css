@@ -1,0 +1,512 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --bodybg:#082130;
+    --textcolor1:#fff;
+    --textcolor2:#f0f0f0;
+    --textcolor4:#f8f9f9a9;
+    --textdanger:red;
+    --textcolor3:rgb(173, 4, 4);
+    --cardcolor1:#1823c0;
+    --cardcolor2:#8d8408;
+    --cardcolor3:#f2f500;
+    --cardcolor4:#8a1880;
+    --brleft:#f3f5f8;
+    --bgcolornot:#030809d2;
+    --brbottomimg:#f9f9f9;
+    --tablecolor:#5e35f2;
+    --formcolor:#43474d;
+    --submit:#eede03;
+    
+}
+body{
+    background-color:var(--bodybg);
+}
+
+/* left side of the website */
+
+.leftside{
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    height: 100vh;
+    position: fixed;
+    align-items: center;
+    gap: 2rem;
+    border-right: 2px solid var(--brleft) ;
+
+}
+.leftside .profileleft {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid var(--brbottomimg);
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: var(--textcolor4);
+}
+.leftside .profileleft .img{
+    margin: 1rem 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+.leftside .links ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.leftside .links ul li{
+    list-style: none;
+}
+.leftside .links ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+}
+.leftside .links ul li a img{
+    width: 45px;
+    height: 45px;
+}
+.leftside .links ul li a .dashboard{
+    width: 40px;
+    margin-left: 25px;
+}
+.leftside .links ul li a .user,.leftside .links ul li a .paypal{
+    filter: saturate(800%);
+}
+.leftside .links ul li a span{
+    color: var(--textcolor2);
+}
+
+
+/* end left side of the website */
+
+/* main */
+.main{
+    margin-left: 20vw;
+    width: 80vw;
+    position: relative;
+}
+
+
+/* links above */
+.main .links{
+    left: 20vw;
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--brbottomimg);
+    align-items: center;
+    position: fixed;
+
+    height: 83px;
+}
+#numbertodaypayment{
+    background-color: var(--textdanger);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    text-align: center;
+    color: var(--textcolor2);
+    position: absolute;
+    top: 10%;
+    z-index: 1000;
+    right: 7%;
+}
+
+ .main .links h2{
+    margin-top: 1rem;
+    padding-left: 20px;
+    color: var(--textcolor4);
+}
+
+.main .links ul{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 82px;
+}
+.main .links ul li{
+    list-style: none;
+}
+.main .links ul li a{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    color: var(--textcolor4);
+}
+.main .links ul .containernotification{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main .links ul .containernotification .notification{
+    width: 45px;
+    filter: sepia(1%) saturate(2000%) ;
+    padding-bottom: 5px;
+}
+.main .links ul .containernotification:hover .notifications{
+     display: block;
+}
+.main .links ul .containernotification .notifications{
+    display: none;
+    background-color: var(--bgcolornot);
+    text-align: center;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    border-radius: 10px;
+}
+.main .links ul .profilecontent{
+    position: relative;
+}
+.main .links ul .profilecontent .profiles{
+    display: none;
+    background-color: var(--bgcolornot);
+    text-align: center;
+    position: absolute;
+    right:10px;
+    border-radius: 10px;
+    padding: 12px;
+}
+.main .links ul .profilecontent:hover .profiles{
+    display: block;
+}
+.main .links ul .profile{
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 20px;
+} 
+/* end links above */
+
+/* dashboard */
+/* container */ 
+
+.main .container{
+    padding-top: 83px;
+    
+}
+.main .container h1{
+    color: var(--textcolor2);
+}
+.main .container h2{
+    color: var(--textcolor4);
+}
+/* end container */
+
+
+.main .container .top{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.main .container .top img{
+    filter: sepia(100%) saturate(2000%) ;
+    width: 50px;
+}
+.main .container .top .left,.main .container .top .right{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.main .container .top .topcontent{
+    width: 450px;
+    display: flex;
+    gap: 2.5rem;
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: center;
+ }
+.main .container .top .left .team{
+    background-color: var(--cardcolor1);  
+}
+.main .container .top .left .clientnumber{
+    background-color: var(--cardcolor2);
+}
+.main .container .top .right .subscribes{
+    background-color: var(--cardcolor4);
+
+}
+.main .container .top .right .currentmission{
+    background-color: var(--cardcolor3);
+    gap: 1rem;
+}
+.main .container .bottom{
+    display: flex;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-right: 2px;
+    justify-content: center;
+}
+.main .container .bottom .bottomcontainer{
+    width: 480px;
+    border: 3px solid var(--textcolor3);  
+
+}
+
+.main .container .bottom .bottomcontainer h1,.main .container .bottom .bottomcontainer .h2{
+    text-align: center;
+    padding: 2px 10px;
+}
+.main .container .bottom .bottomcontainer .h2{
+    border-bottom: 3px solid var(--textcolor3);
+ }
+.main .container .bottom .bottomcont{
+      display: flex;
+      justify-content: space-between;
+
+  }
+
+  .main .container .bottom h1,.main .container .bottom h2{
+      font-size: 15px;
+  }
+  .main .container .bottom .bottomcont h2{
+    margin-left: 10px;
+  }
+/* end dashboard */
+
+
+
+/* withtable */
+.main .withtable{
+    padding-top: 83px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;   
+}
+.main .withtable table{
+    width: 100%;
+    margin-left: -100px;
+}
+.main .services table,.main .missions table{
+    margin-left: unset;
+}
+.main .withtable h1{
+    color: var(--textcolor2);
+}
+
+
+.main .withtable table thead tr td{
+    max-height: 100px; 
+}
+.main .withtable table thead tr td select{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--bodybg);
+    color: var(--textcolor1);
+    border: none;
+}
+
+.main .withtable table thead tr td select:focus{
+    border: none;
+
+}
+
+.main .withtable table img{
+    width: 25px;
+
+}
+
+.main .withtable table tr td{
+    color: var(--textcolor4);
+}
+.main .withtable table tr td a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    text-decoration: none;
+    color: var(--textdanger);
+    background-color: var(--cardcolor3);
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+.main .withtable table tr td{
+    margin-left: auto;
+    background-color:var(--tablecolor) ; 
+}
+.main .withtable table tr td select{
+    margin-bottom: 10px;
+}
+.main .withtable table tr{
+    max-height: 60px;
+}
+
+.main .paiments,.main .clients,.main .employes{
+    margin-left:20%;
+}
+.main .paiments .title,.main .clients .title,.main .employes .title{
+     text-align: left;
+}
+/* form */
+
+
+
+.main .withtable .forms,.main .withtable .forms1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 550px;
+    max-height: 500px;
+    background-color: var(--formcolor);
+    border-radius: 10px;
+    position: absolute;
+    left: 15%;
+    top: 35%;
+    gap: 10px;
+}
+
+.main .withtable .forms1 .container,.main .withtable .forms .container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-100px);
+    gap: 18px;
+    margin-top: 40px;
+}
+
+.main .withtable .forms .container .containerchildform1,
+.main .withtable .forms1 .container .containerchildform1{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    position: relative;
+}
+.main .withtable .forms .container .containerchildform1 label,
+.main .withtable .forms1 .container .containerchildform1 label{
+    position: absolute;
+    top: -17px;
+    background-color: var(--formcolor);
+    left: 3%;
+    color: var(--textcolor4);
+    padding: 5px;
+}
+.main .withtable .forms .container .gender,.main .withtable .container .formclients .gender{
+    background-color: var(--formcolor);
+    border: 1px solid var(--textcolor4);
+    border-radius: 5px;
+
+}
+.main .withtable .forms .container .gender select,.main .withtable .formclients .gender select{
+    width: 100%;
+    padding: 8px;
+    background-color: var(--formcolor);
+    color: var(--textcolor2);
+    border-radius: 5px;
+}
+.main .withtable .forms .container .containerchildform1 input,
+.main .withtable .forms1 .container .containerchildform1 input,
+.main .withtable .forms .container .containerchildform1 textarea,
+.main .withtable .forms1 .container .containerchildform1 textarea{
+    width: 100%;
+    padding: 8px;
+    border-radius:5px;
+    background-color: var(--formcolor);
+    border: 1px solid var(--textcolor4);
+    color: var(--textcolor2);
+}
+.main .withtable .forms input[type="submit"],
+.main .withtable .forms1 input[type="submit"]{
+    width: 20%;
+    padding: 5px;
+    transform: translateY(-90px);
+    border-radius:5px;
+    background-color: var(--submit);
+    border: none;
+}
+.main .withtable .forms{
+    padding-top: 20px;
+}
+
+.main .withtable .formclients{
+    top: 33%;
+}
+
+/* end form  */
+
+/* to show or hide  */
+
+.main #paiments,#clients{
+    display: none;
+}
+.main .withtable #formmission,.main #services #formserviceadd,
+.main #services #formservicemd,.main #missions,.main #employes #formemployemd,
+.main #employes, .main #services,.main #clients #formclientmd,
+.main #employes #formemployeadd{
+    display:none;
+}
+/*end  to show or hide  */
+
+
+/* mission form */
+
+
+.main .withtable .formm{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    padding: 6px;
+    background-color: var(--formcolor);
+    align-items: center;
+    height: 300px;
+    left: 21%;
+    top: 39%;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 5px 5px 30px var(--textcolor2);
+    
+}
+.main .withtable .formm .datemission{
+    display: flex;
+    gap: 6px;
+
+}
+.main .withtable .formm .startdate{
+    margin-top: 3rem;
+    margin-bottom: 10px;
+}
+
+.main .withtable .formm  input[type="submit"]{
+    transform: translateY(30px);
+    padding: 5px;
+    width: 100px;
+    background-color: var(--submit);
+    border-radius: 5px;
+    border: none;
+    
+}
+.main .withtable .formm .datemission input{
+    padding: 5px;
+    border-radius: 5px;
+    color: var(--textcolor2);
+    background-color: var(--formcolor);
+    border: none;
+}
+.main .withtable .formm .datemission h5{
+    color: var(--textcolor4);
+    margin: auto;
+}
+/*end mission form */
+
+
+
+/* End withtable */
+
+/* end main */
