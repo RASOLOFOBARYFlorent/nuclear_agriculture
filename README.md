@@ -41,12 +41,11 @@ Pour en savoir plus sur nos services et discuter de vos besoins spécifiques, n'
 
  --------------------
 
-    # Voici mes contacts
+# Voici mes contacts
 
 
 
-- Addresse email:
-- (rasolofobaryflorent@gmail.com)[mailto:rasolofobaryflorent@gmail.com]
+- Addresse email:(rasolofobaryflorent@gmail.com)[mailto:rasolofobaryflorent@gmail.com]
 
 
  - Contanct: <span style="color:blue;">+261 34 44 564 94 </span>
