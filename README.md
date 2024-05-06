@@ -1,7 +1,7 @@
 
-<div style="color:#099;font-size:30px;">
+<span style="color:#099;font-size:30px;">
     Site Web de Services Nucléaires developpé par RASOLOFOBARY Florent
-</div>
+</span>
 
 ## Introduction
 
@@ -35,15 +35,15 @@ Pour en savoir plus sur nos services et discuter de vos besoins spécifiques, n'
 
 ---
 
-<div style="color:blue;font-size:15px;">
+<span style="color:blue;font-size:15px;">
     Si vous avez des conseils pour moi ou besoin de coopération pour n'importe quel type de site web, je serai ravi de vous donner mes avis et conseils. 
-</div>
+</span>
 
  --------------------
-<div style="color:green;font-size:20px;">
+<span style="color:green;font-size:20px;">
     Voici mes contacts:
 
-</div>
+</span>
 
 
 - Addresse email:
