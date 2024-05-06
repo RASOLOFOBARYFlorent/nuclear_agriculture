@@ -40,16 +40,15 @@ Pour en savoir plus sur nos services et discuter de vos besoins spécifiques, n'
 </span>
 
  --------------------
-<span style="color:green;font-size:20px;">
-    Voici mes contacts:
 
-</span>
+    # Voici mes contacts
+
 
 
 - Addresse email:
-<a href="mailto:rasolofobaryflorent@gmail.com">
-rasolofobaryflorent@gmail.com
- </a>
+- (rasolofobaryflorent@gmail.com)[mailto:rasolofobaryflorent@gmail.com]
+
+
  - Contanct: <span style="color:blue;">+261 34 44 564 94 </span>
   - Facebook : <span style="color:blue;">Rasolofobary Florent </span>
   - LinkedIn : <span style="color:blue">Florent RASOLOBARY </span>
