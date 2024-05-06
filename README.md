@@ -45,9 +45,7 @@ Pour en savoir plus sur nos services et discuter de vos besoins spécifiques, n'
 
 
 
-- Addresse email:(rasolofobaryflorent@gmail.com)[mailto:rasolofobaryflorent@gmail.com]
-
-
+ - Addresse email:rasolofobaryflorent@gmail.com
  - Contanct: <span style="color:blue;">+261 34 44 564 94 </span>
   - Facebook : <span style="color:blue;">Rasolofobary Florent </span>
   - LinkedIn : <span style="color:blue">Florent RASOLOBARY </span>
